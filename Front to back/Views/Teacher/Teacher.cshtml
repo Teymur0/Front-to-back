@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Front_to_back.DataLAccesLayer.Entities.Teacher>
+<h2>Teachers</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var teacher in Model)
+        {
+            <tr>
+                <td>@teacher.Name</td>
+                <td>@teacher.Subject</td>
+            </tr>
+        }
+    </tbody>
+</table>
